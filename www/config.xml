@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.phonegap.nearbyinterests"
+    versionCode = "1"
+    version     = "1.0.0" >
+
+  <name>Location</name>
+
+  <description>
+    
+  </description>
+    <access origin="*"/>
+   	<plugin name="cordova-plugin-whitelist" version="1" />
+    <plugin name="cordova-plugin-geolocation-android-activator" />  
+    <plugin name="cordova-plugin-geolocation"  />
+    <config-file platform="ios" parent="NSLocationWhenInUseUsageDescription" mode="merge">
+        <array>
+            <key>NSLocationWhenInUseUsageDescription</key>
+            <string>Location</string>
+        </array>
+    </config-file>
+    
+</widget>
