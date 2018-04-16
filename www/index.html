@@ -10,7 +10,7 @@
 <script src="js/index.js"></script>
 <script src="phonegap.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMIKYYEIKBhhDss3zK47K8rCwtj0JMt7U" defer></script>
-<style>  #pageone, #map, #mapcontent{ width: 100%; height: 60%; padding: 0; } </style> 
+<style>  #pageone, #map, #mapcontent{ width: 100%; height: 80%; padding: 0; } </style> 
 </head>
 
 <body>
@@ -18,13 +18,19 @@
     <div data-role="page" id="pageone" >
         
         <div data-role="header" data-theme="b">
-            <h1>Nearby places of interest</h1>
+            <h1>Your location</h1>
         </div>
         
         <div role="main" id="mapcontent" class="ui-content" >
             <div id="map"></div>
-           <p>Test</p>
+            
+          <div data-role="header" data-theme="b">
+            <h2>List of places of interest</h2>
         </div>
+               <input type="button" value="Display" onclick="display()" />
+        </div>
+        
+        
         
     </div>
    

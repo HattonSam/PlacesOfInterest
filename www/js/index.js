@@ -46,3 +46,7 @@ function onLocationSuccess(position) {
 function onLocationFail(error) {
     console.log("Error: " + error.message);
 }
+function display()
+{
+    alert("Places of interest displayed.");
+}
